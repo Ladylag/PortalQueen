@@ -8,3 +8,9 @@ end
 function PortalQueenOnFrame()
 
 end
+
+function ActivatePortal(portalItemId)
+    if PlayerHasToy(portalItemId) then 
+        UseToy(portalItemId) 
+    end
+end

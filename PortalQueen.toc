@@ -1,7 +1,7 @@
 ## Interface: 60200
-## Title: SophieScript
-## Notes: For Normal Things
-## SavedVariables: SophieScriptDB
+## Title: PortalQueen
+## Notes: PortalLyfe
+## SavedVariables: PortalQueenDB
 
 PortalQueen.lua
 PortalQueen.xml

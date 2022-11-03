@@ -3,5 +3,13 @@
 ## Notes: PortalLyfe
 ## SavedVariables: PortalQueenDB
 
+#@non-debug@
+# LibStub\LibStub.lua
+# CallbackHandler-1.0\CallbackHandler-1.0.lua
+# HereBeDragons\HereBeDragons-2.0.lua
+# HereBeDragons\HereBeDragons-Pins-2.0.lua
+#@end-non-debug@
+
+data.lua
 PortalQueen.lua
 PortalQueen.xml

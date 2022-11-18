@@ -7,11 +7,36 @@ local pinParent = {} -- HBDP needs some ref for the pins
 
 function PortalQueen() 
     -- DebugDemoOfMapPin()
+
+   
+    -- local pin = CreateFrame('Button', nil, UIParent, "SecureActionButtonTemplate")
+    -- pin:SetPoint("CENTER")
+    -- pin:SetWidth(64)
+    -- pin:SetHeight(64)
+    -- pin:SetAttribute("type", "macrotext")
+    -- pin:SetAttribute("macrotext", "/say testing")
+    -- pin:RegisterForClicks()
+
+   
+
     CreateMapPins()
 end
 
 function PortalQueenOnFrame()
     
+end
+
+function PQTest()
+    local macroBtn = CreateFrame("Button", "myMacroButton", UIParent, "SecureActionButtonTemplate, ActionBarButtonTemplate")
+    macroBtn:SetPoint("CENTER")
+    macroBtn:SetPoint("TOP")
+    macroBtn:SetSize(50, 50)
+    macroBtn:SetAttribute("type", "spell") -- left click causes macro
+    macroBtn:SetAttribute("spell", "Frost Nova") -- text for macro on left click
+    macroBtn:RegisterForClicks("AnyUp")
+    macroBtn.texture = macroBtn:CreateTexture()
+    macroBtn.texture:SetAllPoints(macroBtn)
+    macroBtn.texture:SetColorTexture(1,0.1,0.1,0.75)    
 end
 
 function ActivatePortal(portalItemId)
